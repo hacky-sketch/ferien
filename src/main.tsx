@@ -1,10 +1,16 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+
+import {HolidayForm} from "./HolidayForm.tsx";
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+<HolidayForm onSave={function ():void {
+
+} } onCancel={function (): void{
+
+}}></HolidayForm>
   </StrictMode>,
 )
